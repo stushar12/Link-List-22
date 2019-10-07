@@ -51,6 +51,7 @@ struct node *insert(int x,struct node *top)
   temp=(struct node *)malloc(sizeof(struct node));
   temp->data=x;
   temp->next=top;
+  top=temp;
 return temp;
 }
 
